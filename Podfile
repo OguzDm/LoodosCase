@@ -8,5 +8,6 @@ target 'LoodosCase' do
 	pod 'Firebase/Core'
 	pod 'Alamofire'
 	pod 'Kingfisher'
+	pod 'lottie-ios'
 
 end

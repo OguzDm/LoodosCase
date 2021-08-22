@@ -89,6 +89,7 @@ PODS:
   - GoogleUtilities/UserDefaults (7.4.0):
     - GoogleUtilities/Logger
   - Kingfisher (6.3.1)
+  - lottie-ios (3.2.2)
   - nanopb (2.30908.0):
     - nanopb/decode (= 2.30908.0)
     - nanopb/encode (= 2.30908.0)
@@ -102,6 +103,7 @@ DEPENDENCIES:
   - Firebase/Core
   - Firebase/RemoteConfig
   - Kingfisher
+  - lottie-ios
 
 SPEC REPOS:
   trunk:
@@ -117,6 +119,7 @@ SPEC REPOS:
     - GoogleDataTransport
     - GoogleUtilities
     - Kingfisher
+    - lottie-ios
     - nanopb
     - PromisesObjC
 
@@ -133,9 +136,10 @@ SPEC CHECKSUMS:
   GoogleDataTransport: cd9db2180fcecd8da1b561aea31e3e56cf834aa7
   GoogleUtilities: 284cddc7fffc14ae1907efb6f78ab95c1fccaedc
   Kingfisher: 016c8b653a35add51dd34a3aba36b580041acc74
+  lottie-ios: a033bb989eea77d9f99cc4e2bbdd3788229761ad
   nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
   PromisesObjC: 3113f7f76903778cf4a0586bd1ab89329a0b7b97
 
-PODFILE CHECKSUM: 3d7cc13a3ef0c1fc14f712f1273c6f3512856a51
+PODFILE CHECKSUM: 77ea308b55df5b01af922265796d5b6ba6b15477
 
 COCOAPODS: 1.10.0

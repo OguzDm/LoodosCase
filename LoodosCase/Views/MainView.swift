@@ -6,22 +6,33 @@
 //
 
 import UIKit
+import Lottie
 
 final class MainView: UIViewController, SearchViewModelDelegate {
     func getSearchResults() {
        reloadTableView()
     }
-    
     private var currentPage = 1
     private var currentQuery = ""
     private let searchViewModel = SearchViewModel()
     private let searchController = UISearchController()
     private var tableView = UITableView()
+    @IBOutlet weak var animationView: AnimationView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         searchViewModel.delegate = self
-        configureTableView()
-        prepareNavigationBar()
+        navigationController?.isNavigationBarHidden = true
+        let animation = Animation.named("movieLoading")
+        animationView.animation = animation
+        animationView.contentMode = .scaleAspectFit
+        animationView.loopMode = .playOnce
+        animationView.backgroundColor = .clear
+        animationView.play { _ in
+            self.navigationController?.isNavigationBarHidden = false
+            self.configureTableView()
+            self.prepareNavigationBar()
+        }
     }
     
     private func configureTableView(){

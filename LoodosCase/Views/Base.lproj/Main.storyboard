@@ -15,10 +15,27 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Shd-9m-pBo" customClass="AnimationView" customModule="Lottie">
+                                <rect key="frame" x="120" y="361" width="174" height="174"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="174" id="91s-lH-b9i"/>
+                                    <constraint firstAttribute="height" constant="174" id="yNi-zb-nOJ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Shd-9m-pBo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="egB-L2-vgu"/>
+                            <constraint firstItem="Shd-9m-pBo" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="yxN-5C-Zeq"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="bH2-3Y-uPu"/>
+                    <connections>
+                        <outlet property="animationView" destination="Shd-9m-pBo" id="Gqe-SQ-MQZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

@@ -26,6 +26,7 @@
 		B946E6BE26D1BF0900AB4DDA /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = B946E6BD26D1BF0900AB4DDA /* Service.swift */; };
 		B9841E3726D26B0600ECA557 /* SearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9841E3626D26B0600ECA557 /* SearchModel.swift */; };
 		B9841E3926D26F0D00ECA557 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9841E3826D26F0D00ECA557 /* SearchViewModel.swift */; };
+		B9FE65CB26D313E300666EBD /* movieLoading.json in Resources */ = {isa = PBXBuildFile; fileRef = B9FE65CA26D313E300666EBD /* movieLoading.json */; };
 		CC91C3A9307F1088A827D78F /* libPods-LoodosCase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 41BEAC3632D10CBA46C64F5A /* libPods-LoodosCase.a */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +54,7 @@
 		B946E6BD26D1BF0900AB4DDA /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		B9841E3626D26B0600ECA557 /* SearchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchModel.swift; sourceTree = "<group>"; };
 		B9841E3826D26F0D00ECA557 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		B9FE65CA26D313E300666EBD /* movieLoading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = movieLoading.json; sourceTree = "<group>"; };
 		D84FE53B4E95401C7FFCBB6E /* Pods-LoodosCase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoodosCase.debug.xcconfig"; path = "Target Support Files/Pods-LoodosCase/Pods-LoodosCase.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -116,6 +118,7 @@
 				B910335426D134BC002E4F30 /* LaunchScreen.storyboard */,
 				B910335726D134BC002E4F30 /* Info.plist */,
 				B910335F26D13745002E4F30 /* GoogleService-Info.plist */,
+				B9FE65CA26D313E300666EBD /* movieLoading.json */,
 			);
 			path = LoodosCase;
 			sourceTree = "<group>";
@@ -224,6 +227,7 @@
 				B910336026D13745002E4F30 /* GoogleService-Info.plist in Resources */,
 				B910335326D134BC002E4F30 /* Assets.xcassets in Resources */,
 				B910335126D134BB002E4F30 /* Main.storyboard in Resources */,
+				B9FE65CB26D313E300666EBD /* movieLoading.json in Resources */,
 				B91BF73426D2961C00AE9FAB /* SearchTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
