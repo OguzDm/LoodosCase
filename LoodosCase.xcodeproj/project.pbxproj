@@ -115,7 +115,6 @@
 				B910334926D134BB002E4F30 /* AppDelegate.swift */,
 				B910334B26D134BB002E4F30 /* SceneDelegate.swift */,
 				B910335226D134BC002E4F30 /* Assets.xcassets */,
-				B910335426D134BC002E4F30 /* LaunchScreen.storyboard */,
 				B910335726D134BC002E4F30 /* Info.plist */,
 				B910335F26D13745002E4F30 /* GoogleService-Info.plist */,
 				B9FE65CA26D313E300666EBD /* movieLoading.json */,
@@ -126,6 +125,7 @@
 		B91BF72B26D2924600AE9FAB /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B910335426D134BC002E4F30 /* LaunchScreen.storyboard */,
 				B910334D26D134BB002E4F30 /* MainView.swift */,
 				B910335D26D13617002E4F30 /* SplashView.swift */,
 				B91BF73126D2961C00AE9FAB /* SearchTableViewCell.swift */,

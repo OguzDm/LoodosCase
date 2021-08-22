@@ -30,5 +30,4 @@ final class SearchTableViewCell: UITableViewCell {
         movieNameLabel.text = name
         typeLabel.text = type.capitalized
     }
-    
 }

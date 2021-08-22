@@ -12,8 +12,8 @@ protocol MovieDetailViewModelDelegate:AnyObject {
 }
 
 final class MovieDetailViewModel {
-    weak var delegate: MovieDetailViewModelDelegate?
     
+    weak var delegate: MovieDetailViewModelDelegate?
     func fetchDetails(with id: String) {
         Service.shared.fetchDetails(with: id) { model in
             self.delegate?.loadDetails(with: model)

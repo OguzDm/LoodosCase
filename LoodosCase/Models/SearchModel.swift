@@ -8,7 +8,6 @@
 import Foundation
 
 struct SearchModel: Decodable {
-    
     let Search: [SearchResult]
 }
 
