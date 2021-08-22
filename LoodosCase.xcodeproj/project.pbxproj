@@ -104,7 +104,6 @@
 				B91BF72B26D2924600AE9FAB /* Views */,
 				B910334926D134BB002E4F30 /* AppDelegate.swift */,
 				B910334B26D134BB002E4F30 /* SceneDelegate.swift */,
-				B910334F26D134BB002E4F30 /* Main.storyboard */,
 				B910335226D134BC002E4F30 /* Assets.xcassets */,
 				B910335426D134BC002E4F30 /* LaunchScreen.storyboard */,
 				B910335726D134BC002E4F30 /* Info.plist */,
@@ -120,6 +119,7 @@
 				B910335D26D13617002E4F30 /* SplashViewController.swift */,
 				B91BF73126D2961C00AE9FAB /* SearchTableViewCell.swift */,
 				B91BF73226D2961C00AE9FAB /* SearchTableViewCell.xib */,
+				B910334F26D134BB002E4F30 /* Main.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
