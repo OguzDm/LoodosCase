@@ -13,11 +13,11 @@ protocol SearchViewModelDelegate: AnyObject{
 
 class SearchViewModel {
     
-    var results: SearchModel?
+    var results = [SearchResult]()
     weak var delegate: SearchViewModelDelegate?
     func searchRequest(with query: String) {
         Service.shared.searchMovies(with: query) { result in
-            self.results = result
+            self.results = result.Search
             self.delegate?.getSearchResults()
         }
     }

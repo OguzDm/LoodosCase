@@ -9,6 +9,11 @@ import Foundation
 
 struct SearchModel: Decodable {
     
+    let Search: [SearchResult]
+}
+
+struct SearchResult: Decodable {
+    
     let title: String
     let year: String
     let imdbId: String
