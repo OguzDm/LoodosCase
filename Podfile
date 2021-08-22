@@ -5,6 +5,7 @@ target 'LoodosCase' do
   
 	pod 'Firebase/Analytics'
 	pod 'Firebase/RemoteConfig'
+	pod 'Firebase/Core'
 	pod 'Alamofire'
 	pod 'Kingfisher'
 

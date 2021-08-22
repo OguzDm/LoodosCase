@@ -7,10 +7,14 @@
 
 import UIKit
 import Kingfisher
+import Firebase
 
 final class MovieDetailView: UIViewController, MovieDetailViewModelDelegate {
     
     func loadDetails(with model: MovieDetailModel) {
+        
+        Analytics.logEvent("movie_detail", parameters:
+                            model.dictionary)
         guard let imageURL = URL(string: model.Poster) else {return}
         self.movieImageView.kf.indicatorType = .activity
         self.movieImageView.kf.setImage(with: imageURL)

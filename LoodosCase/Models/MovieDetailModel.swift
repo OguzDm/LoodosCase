@@ -17,4 +17,14 @@ struct MovieDetailModel: Decodable {
     let Language: String
     let Poster: String
     let imdbID : String
+    var dictionary: [String: String] {
+        return ["Title":Title,
+                "Year":Year,
+                "Runtime":Runtime,
+                "Genre":Genre,
+                "Plot":Plot,
+                "Language":Language,
+                "Poster":Poster,
+                "imdbID":imdbID]
+    }
 }
