@@ -9,11 +9,11 @@ import UIKit
 
 final class MainView: UIViewController, SearchViewModelDelegate {
     func getSearchResults() {
-        DispatchQueue.main.async {
-            self.tableView.reloadData()
-        }
+       reloadTableView()
     }
     
+    private var currentPage = 1
+    private var currentQuery = ""
     private let searchViewModel = SearchViewModel()
     private let searchController = UISearchController()
     private var tableView = UITableView()
@@ -31,6 +31,7 @@ final class MainView: UIViewController, SearchViewModelDelegate {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(UINib.loadNib(name: SearchTableViewCell.reuseIdentifier), forCellReuseIdentifier: SearchTableViewCell.reuseIdentifier)
+        tableView.tableFooterView = UIView()
         view.addSubview(tableView)
         
         NSLayoutConstraint.activate([
@@ -45,6 +46,12 @@ final class MainView: UIViewController, SearchViewModelDelegate {
         navigationItem.searchController = searchController
         searchController.searchBar.delegate = self
     }
+    
+    private func reloadTableView(){
+        DispatchQueue.main.async {
+            self.tableView.reloadData()
+        }
+    }
 }
 
 extension MainView: UITableViewDelegate {
@@ -57,6 +64,13 @@ extension MainView: UITableViewDelegate {
         detailVC.imdbID = searchViewModel.results[indexPath.row].imdbId
         
         navigationController?.pushViewController(detailVC, animated: true)
+    }
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        if indexPath.row == searchViewModel.results.count - 2 {
+            currentPage += 1
+            searchViewModel.searchRequest(with: currentQuery, page: currentPage)
+        }
     }
 }
 
@@ -76,8 +90,19 @@ extension MainView: UITableViewDataSource {
 extension MainView: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         if searchText.count >= 3 {
-            searchViewModel.searchRequest(with: searchText)
+            currentQuery = searchText
+            currentPage = 1
+            searchViewModel.results.removeAll()
+            reloadTableView()
+            searchViewModel.searchRequest(with: searchText,page: currentPage)
         }
+    }
+    
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        currentQuery = ""
+        currentPage = 1
+        searchViewModel.results.removeAll()
+        reloadTableView()
     }
 }
 

@@ -15,9 +15,9 @@ class SearchViewModel {
     
     var results = [SearchResult]()
     weak var delegate: SearchViewModelDelegate?
-    func searchRequest(with query: String) {
-        Service.shared.searchMovies(with: query) { result in
-            self.results = result.Search
+    func searchRequest(with query: String,page: Int) {
+        Service.shared.searchMovies(with: query,page: page) { result in
+            self.results.append(contentsOf: result.Search)
             self.delegate?.getSearchResults()
         }
     }

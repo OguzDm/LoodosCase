@@ -12,8 +12,8 @@ class Service {
     
     static let shared = Service()
     
-    func searchMovies(with query: String,completionHandler: @escaping (SearchModel) -> ()){
-        AF.request(Constants.baseURL + "?apikey=" + Constants.apiKey + "&s=\(query)").responseDecodable(of:SearchModel.self) { response in
+    func searchMovies(with query: String,page: Int,completionHandler: @escaping (SearchModel) -> ()){
+        AF.request(Constants.baseURL + "?apikey=" + Constants.apiKey + "&s=\(query)" + "&page=\(page)").responseDecodable(of:SearchModel.self) { response in
             
             switch response.result {
             case .success(let model):
