@@ -18,6 +18,7 @@
 		B910336226D1395A002E4F30 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B910336126D1395A002E4F30 /* Constants.swift */; };
 		B946E6BE26D1BF0900AB4DDA /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = B946E6BD26D1BF0900AB4DDA /* Service.swift */; };
 		B9841E3726D26B0600ECA557 /* SearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9841E3626D26B0600ECA557 /* SearchModel.swift */; };
+		B9841E3926D26F0D00ECA557 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9841E3826D26F0D00ECA557 /* SearchViewModel.swift */; };
 		CC91C3A9307F1088A827D78F /* libPods-LoodosCase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 41BEAC3632D10CBA46C64F5A /* libPods-LoodosCase.a */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +38,7 @@
 		B910336126D1395A002E4F30 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B946E6BD26D1BF0900AB4DDA /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		B9841E3626D26B0600ECA557 /* SearchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchModel.swift; sourceTree = "<group>"; };
+		B9841E3826D26F0D00ECA557 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		D84FE53B4E95401C7FFCBB6E /* Pods-LoodosCase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoodosCase.debug.xcconfig"; path = "Target Support Files/Pods-LoodosCase/Pods-LoodosCase.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -102,6 +104,7 @@
 				B910336126D1395A002E4F30 /* Constants.swift */,
 				B946E6BD26D1BF0900AB4DDA /* Service.swift */,
 				B9841E3626D26B0600ECA557 /* SearchModel.swift */,
+				B9841E3826D26F0D00ECA557 /* SearchViewModel.swift */,
 			);
 			path = LoodosCase;
 			sourceTree = "<group>";
@@ -205,6 +208,7 @@
 			files = (
 				B910336226D1395A002E4F30 /* Constants.swift in Sources */,
 				B910334E26D134BB002E4F30 /* ViewController.swift in Sources */,
+				B9841E3926D26F0D00ECA557 /* SearchViewModel.swift in Sources */,
 				B910334A26D134BB002E4F30 /* AppDelegate.swift in Sources */,
 				B910334C26D134BB002E4F30 /* SceneDelegate.swift in Sources */,
 				B9841E3726D26B0600ECA557 /* SearchModel.swift in Sources */,
