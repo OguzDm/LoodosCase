@@ -18,11 +18,12 @@ final class MovieDetailView: UIViewController, MovieDetailViewModelDelegate {
         guard let imageURL = URL(string: model.Poster) else {return}
         self.movieImageView.kf.indicatorType = .activity
         self.movieImageView.kf.setImage(with: imageURL)
-        self.runTimeLabel.text = model.Runtime
+        self.runTimeLabel.text = model.runtime
         self.genreLabel.text = model.Genre
-        self.languageLabel.text = model.Language
+        self.languageLabel.text = model.language
         self.movieNameLabel.text = model.Title
         self.plotLabel.text = model.Plot
+        self.imdbRating.text = model.imdbRating
     }
     
     @IBOutlet weak var movieImageView: UIImageView!
@@ -31,6 +32,8 @@ final class MovieDetailView: UIViewController, MovieDetailViewModelDelegate {
     @IBOutlet weak var languageLabel: UILabel!
     @IBOutlet weak var movieNameLabel: UILabel!
     @IBOutlet weak var plotLabel: UILabel!
+    @IBOutlet weak var imdbRating: UILabel!
+    
     let movieDetailViewModel = MovieDetailViewModel()
     var imdbID = ""
     override func viewDidLoad() {

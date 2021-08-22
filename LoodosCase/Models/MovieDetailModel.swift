@@ -17,6 +17,7 @@ struct MovieDetailModel: Decodable {
     let Language: String
     let Poster: String
     let imdbID : String
+    let imdbRating: String
     var dictionary: [String: String] {
         return ["Title":Title,
                 "Year":Year,
@@ -26,5 +27,21 @@ struct MovieDetailModel: Decodable {
                 "Language":Language,
                 "Poster":Poster,
                 "imdbID":imdbID]
+    }
+    
+    var runtime: String {
+        let digits = Runtime.split(separator: " ")
+        
+        return String(digits[0])
+    }
+    
+    var language: String{
+        if Language.contains(",") {
+            let language = Language.split(separator: ",")
+            return String(language[0])
+        }
+        else {
+         return Language
+        }
     }
 }
