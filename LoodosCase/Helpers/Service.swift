@@ -23,4 +23,16 @@ class Service {
             }
         }
     }
+    
+    func fetchDetails(with id: String,completionHandler: @escaping (MovieDetailModel) -> ()) {
+        AF.request(Constants.baseURL + "?apikey=" + Constants.apiKey + "&i=\(id)").responseDecodable(of:MovieDetailModel.self) { response in
+            
+            switch response.result {
+            case .success(let model):
+                completionHandler(model)
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        }
+    }
 }

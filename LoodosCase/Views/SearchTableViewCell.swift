@@ -8,7 +8,7 @@
 import UIKit
 import Kingfisher
 
-class SearchTableViewCell: UITableViewCell {
+final class SearchTableViewCell: UITableViewCell {
 
     static let reuseIdentifier = "SearchTableViewCell"
     @IBOutlet weak var movieImageView: UIImageView!
