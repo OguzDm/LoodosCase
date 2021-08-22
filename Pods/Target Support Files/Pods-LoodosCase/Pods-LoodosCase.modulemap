@@ -1,0 +1,6 @@
+module Pods_LoodosCase {
+  umbrella header "Pods-LoodosCase-umbrella.h"
+
+  export *
+  module * { export * }
+}
